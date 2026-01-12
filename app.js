@@ -3,13 +3,22 @@ let errorsData = [];
 // Load errors.json
 fetch('errors.json')
   .then(response => response.json())
-  .then(data => errorsData = data)
+  .then(data => {
+    errorsData = data;
+
+    // Initialize Fuse.js
+    window.fuse = new Fuse(errorsData, {
+      keys: ['title', 'keywords'],
+      threshold: 0.4,   // 0 = exact match, 1 = matches anything
+      includeScore: true
+    });
+  })
   .catch(err => console.error("Failed to load error data:", err));
 
 document.getElementById('searchBtn').addEventListener('click', searchError);
 
 function searchError() {
-  const query = document.getElementById('searchInput').value.toLowerCase();
+  const query = document.getElementById('searchInput').value.trim();
   const resultsDiv = document.getElementById('results');
   resultsDiv.innerHTML = '';
 
@@ -18,10 +27,8 @@ function searchError() {
     return;
   }
 
-  const matches = errorsData.filter(error =>
-    error.title.toLowerCase().includes(query) ||
-    error.keywords.some(k => k.toLowerCase().includes(query))
-  );
+  // Use Fuse.js to search
+  const matches = window.fuse.search(query).map(result => result.item);
 
   if (matches.length === 0) {
     resultsDiv.innerHTML = "<p>No matching error found.</p>";
