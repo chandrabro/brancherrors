@@ -12,21 +12,22 @@
     "solution": "Check printer connection and restart the printer. Ensure it is connected to the branch network."
   },
   {
+    "id": "NP
+
+Save failed because of : Duplicate entry
+ for key 'account no'
+
+0",
+    "title": "Saved failed because of : Duplicate entry for key account no",
+    "keywords": ["Saved failed because of : Duplicate entry", "Save failed because of : Duplicate entry
+ for key 'account no", "Save failed because of : Duplicate entry
+ for key account no"],
+    "solution": "त्यो सदस्यको पुरानो कर्जाको कर्जा नम्बर पनि उही रहेको छ त्यसैले सूचना प्रविधि इकाईमा चन्द्र सरलाइ पुरानो कर्जा को खाता नम्बर मिलाउन भन्नु होला ."
+  },
+  {
     "id": "ORACLE_12541",
     "title": "Oracle Listener Not Running",
     "keywords": ["oracle", "listener", "12541"],
     "solution": "Start the Oracle listener service and verify database connection."
   }
-  {
-    "id": "ORACLE_12541",
-    "title": "NP
-
-Save failed because of : Duplicate entry
-'for key 'account no'
-0",
-    "keywords": ["oracle", "listener", "12541"],
-    "solution": "Start the Oracle listener service and verify database connection."
-  }
 ]
-
-
