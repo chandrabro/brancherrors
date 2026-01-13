@@ -17,4 +17,11 @@
     "keywords": ["oracle", "listener", "12541"],
     "solution": "Start the Oracle listener service and verify database connection."
   }
+  {
+    "id": "ORACLE_12541",
+    "title": "Oracle Listener Not Running",
+    "keywords": ["oracle", "listener", "12541"],
+    "solution": "Start the Oracle listener service and verify database connection."
+  }
 ]
+
