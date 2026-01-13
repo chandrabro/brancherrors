@@ -12,15 +12,10 @@
     "solution": "Check printer connection and restart the printer. Ensure it is connected to the branch network."
   },
   {
-    "id": "NP
-
-Save failed because of : Duplicate entry
- for key 'account no'
-
-0",
+    "id": "NP Save failed because of : Duplicate entry for key account no",
     "title": "Saved failed because of : Duplicate entry for key account no",
     "keywords": ["Saved failed because of : Duplicate entry", "Save failed because of : Duplicate entry
- for key 'account no", "Save failed because of : Duplicate entry
+ for key account no", "Save failed because of : Duplicate entry
  for key account no"],
     "solution": "त्यो सदस्यको पुरानो कर्जाको कर्जा नम्बर पनि उही रहेको छ त्यसैले सूचना प्रविधि इकाईमा चन्द्र सरलाइ पुरानो कर्जा को खाता नम्बर मिलाउन भन्नु होला ."
   },
@@ -31,3 +26,4 @@ Save failed because of : Duplicate entry
     "solution": "Start the Oracle listener service and verify database connection."
   }
 ]
+
