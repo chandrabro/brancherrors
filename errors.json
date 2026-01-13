@@ -19,9 +19,14 @@
   }
   {
     "id": "ORACLE_12541",
-    "title": "Oracle Listener Not Running",
+    "title": "NP
+
+Save failed because of : Duplicate entry
+'for key 'account no'
+0",
     "keywords": ["oracle", "listener", "12541"],
     "solution": "Start the Oracle listener service and verify database connection."
   }
 ]
+
 
